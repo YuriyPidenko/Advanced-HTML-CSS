@@ -1,0 +1,38 @@
+@import "vars";
+@import "mixines";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  color: $textColor;
+}
+
+.nav {
+  display: flex;
+  gap: $gapGrid;
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.content {
+  display: flex;
+  gap: $gapGrid;
+  @include centerflex();
+  &__item {
+    width: $widthSite / 4;
+    height: 200px;
+    border: $borderBox;
+    @extend %fontSite;
+  }
+}
+
+%fontSite {
+  font-family: sans-serif;
+  font-style: normal;
+}
