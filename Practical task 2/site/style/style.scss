@@ -2,6 +2,7 @@
 @import "vars";
 @import "product";
 @import "catalog";
+@import "shoping";
 
 * {
     margin: 0;
@@ -265,6 +266,7 @@ li {
     width: 360px;
     background: rgb(248, 248, 248);
     margin-bottom: 30px;
+    position: relative;
 }
 
 .cards-elem__subtitle {
@@ -295,6 +297,54 @@ li {
 
 .cards-elem {
     padding: 23px 28px 16px 20px;
+}
+
+.cards-item__link {
+    text-decoration: none;
+}
+
+.cards-item:hover {
+    box-shadow: 0px 5px 8px 0px rgb(0, 0, 0, 0.15);
+}
+
+.add-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.add {
+    display: none;
+    padding: 1rem 2rem;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    align-items: center;
+    pointer-events: all;
+}
+
+.cards-img {
+    margin-right: 10px;
+}
+
+
+.add:hover {
+    box-shadow: 0px 0px 10px 0px #fff;
+}
+
+
+.cards-item:hover .cards-img {
+    filter: brightness(30%);
+}
+
+.cards-item:hover .add {
+    display: flex;
 }
 
 .cards-btn {
@@ -430,7 +480,7 @@ li {
 
 .subscribe-input {
     padding-left: 22px;
-    color: rgb(34, 34, 36);
+
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -440,6 +490,10 @@ li {
     width: 246px;
     border: none;
     border-radius: 30px 0 0 30px;
+}
+
+.subscribe-input::placeholder {
+    color: rgb(34, 34, 36);
 }
 
 .subscribe-form {
