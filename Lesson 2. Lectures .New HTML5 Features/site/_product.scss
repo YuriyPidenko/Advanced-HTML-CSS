@@ -13,16 +13,28 @@
 }
 
 .bredcrumbs {
+    &__ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__li:not(:last-child)::after {
+        content: "/";
+        padding-left: 8px;
+        padding-right: 8px;
+        color: rgb(99, 99, 99);
+    }
+
+    &__li:last-child .bredcrumbs__link {
+        color: $colorSelectSite;
+    }
+
     &__link {
         color: rgb(99, 99, 99);
         font-size: 14px;
         font-weight: 700;
         line-height: 17px;
         text-decoration: none;
-
-        &_site {
-            color: $colorSelectSite;
-        }
     }
 }
 

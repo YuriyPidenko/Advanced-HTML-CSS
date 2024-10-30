@@ -12,15 +12,25 @@
   text-align: left;
 }
 
+.bredcrumbs__ul {
+  list-style-type: none;
+  display: flex;
+}
+.bredcrumbs__li:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+  color: rgb(99, 99, 99);
+}
+.bredcrumbs__li:last-child .bredcrumbs__link {
+  color: rgb(241, 109, 127);
+}
 .bredcrumbs__link {
   color: rgb(99, 99, 99);
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
   text-decoration: none;
-}
-.bredcrumbs__link_site {
-  color: rgb(241, 109, 127);
 }
 
 .product-cover {
