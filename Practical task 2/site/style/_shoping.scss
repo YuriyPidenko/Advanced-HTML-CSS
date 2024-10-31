@@ -97,7 +97,13 @@
         border: 1px solid rgb(164, 164, 164);
         padding: 1rem 2rem;
         margin-top: 32px;
+
+        &:hover {
+            background-color: $colorSelectSite;
+            color: white;
+        }
     }
+
 }
 
 .shopping-flex {
@@ -139,6 +145,11 @@
     font-weight: 300;
     line-height: 13px;
     text-align: left;
+
+    &:hover {
+        background-color: $colorSelectSite;
+        color: white;
+    }
 }
 
 .shopping__form_head {
@@ -200,4 +211,14 @@
     text-decoration: none;
     padding: 1rem 2rem;
     margin-left: 55px;
+
+    &:hover {
+        background: rgb(255, 255, 255);
+        border: 1px solid rgb(164, 164, 164);
+        color: rgb(74, 74, 74);
+    }
+}
+
+.img-close:hover path {
+    fill: $colorSelectSite;
 }

@@ -13,6 +13,38 @@
 }
 
 .bredcrumbs {
+    &__ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__li:not(:last-child)::after {
+        content: "/";
+        padding-left: 8px;
+        padding-right: 8px;
+        color: rgb(99, 99, 99);
+    }
+
+    &__link:hover {
+        color: $colorSelectSite;
+    }
+
+    &__li:last-child .bredcrumbs__link {
+        color: $colorSelectSite;
+    }
+
+    &__li:last-child .bredcrumbs__link:hover {
+        color: rgb(99, 99, 99);
+    }
+
+    &__link {
+        color: rgb(99, 99, 99);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-decoration: none;
+    }
+
     &__link {
         color: rgb(99, 99, 99);
         font-size: 14px;
@@ -33,6 +65,11 @@
     background: rgb(247, 247, 247);
     padding-top: 10px;
     padding-bottom: 40;
+
+    &__svg:hover path {
+        fill: $colorSelectSite;
+
+    }
 
     &__flex {
         display: flex;
