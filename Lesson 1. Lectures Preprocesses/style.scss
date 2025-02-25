@@ -1,0 +1,119 @@
+@import 'vars';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato',
+        sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: $backblock;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @extend %flex-wrap;
+}
+
+.header__left {
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+.header__right {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.top-head {
+    background: rgb(248, 243, 244);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.top-head__heading {
+    color: $colorSelectSite;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+
+}
+
+.breadcrumbs__link {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: rgb(99, 99, 99);
+}
+
+.breadcrumbs__link_site {
+    font-weight: 700px;
+    color: $colorSelectSite;
+}
+
+%flex-wrap {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.product-box {
+    @include centerflex();
+}
+
+.product {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__content {
+        background: rgb(248, 248, 248);
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__name {
+        color: $colorText;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    &__text {
+        color: rgb(93, 93, 93);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+    }
+
+    &__price {
+        color: $colorSelectSite;
+    }
+}
