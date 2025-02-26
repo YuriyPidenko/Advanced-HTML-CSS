@@ -1,0 +1,106 @@
+.nav {
+    background-color: rgb(248, 243, 244);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 51px;
+
+    &-head__heading {
+        color: $colorSelectSite;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+
+    }
+}
+
+.breadcrumbs {
+    &__link {
+        text-decoration: none;
+        color: rgb(99, 99, 99);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+
+        &_site {
+            color: $colorSelectSite;
+        }
+    }
+}
+
+.filter {
+    margin-bottom: 64px;
+
+    &-flex {
+        display: flex;
+        gap: 320px;
+
+    }
+
+    &-left {
+        display: flex;
+        gap: 11px;
+        align-items: center;
+
+        &_text {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+        }
+    }
+
+    &-right {
+        display: flex;
+        gap: 48px;
+
+        &__box {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+
+        &_text {
+            color: rgb(111, 110, 110);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+    }
+}
+
+.trading-cards__catalog {
+    margin-bottom: 18px;
+}
+
+.pagination {
+    margin-bottom: 96px;
+
+    &-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-box {
+        border: 1px solid rgb(235, 235, 235);
+        display: flex;
+    }
+
+    &__link {
+        text-decoration: none;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        color: rgb(196, 196, 196);
+    }
+
+    &__link:hover {
+        color: $colorSelectSite;
+        transition: .5s ease;
+    }
+
+    &__link:hover path {
+        fill: $colorSelectSite;
+        transition: .5s ease;
+    }
+}
