@@ -1,0 +1,42 @@
+@import 'vars';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+}
+
+.selected-text {
+    color: $colorSelectSite;
+}
+
+.nav {
+    display: flex;
+    gap: $gapGrid;
+
+    &__link {
+        text-decoration: none;
+        @extend %font-family;
+    }
+}
+
+.content {
+    @include centerflex();
+    gap: $gapGrid;
+
+    &__item {
+        width: $widthSite / 4;
+        height: 200px;
+        border: $borderContent;
+    }
+}
+
+%font-family {
+    font-family: sans-serif;
+    font-style: normal;
+}
