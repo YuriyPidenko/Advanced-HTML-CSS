@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'catalog';
+@import 'product';
 
 * {
     margin: 0;
@@ -9,7 +10,24 @@
 
 body {
     font-family: Lato;
+    user-select: none;
+}
 
+.box-content {
+    overflow: hidden;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 .container {
@@ -28,6 +46,8 @@ body {
 .header {
     background-color: $backBlock;
     padding: 18px 0px;
+    position: relative;
+
 }
 
 .header-lift {
@@ -42,7 +62,71 @@ body {
     gap: 32px;
 }
 
-.cover-left__img {
+#burger {
+    position: absolute;
+    left: -9999999999999px;
+    visibility: hidden;
+
+    &:checked~.nav {
+        right: -232px;
+    }
+
+}
+
+.nav {
+    background: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 232px;
+    padding: 32px;
+    position: absolute;
+    top: 74px;
+    right: 0px;
+    transition: right .3s;
+    z-index: 10;
+}
+
+.burger-menu {
+    &__icon_title {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        margin-bottom: 24px;
+    }
+
+    &__icon_subtitle {
+        color: $colorSelectSite;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-decoration: none;
+    }
+
+    &__icon_link {
+        color: rgb(111, 110, 110);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-decoration: none;
+    }
+
+    &__icon_link:hover {
+        color: $colorSelectSite;
+        transition: .3s ease;
+    }
+
+    &__li_pading {
+        padding-top: 11px;
+        // padding-bottom: 11px;
+        padding-left: 21px;
+    }
+
+    &__ul_margin {
+        margin-bottom: 11px;
+    }
+}
+
+.burger-menu .cover-left__img {
     width: 100%;
     max-width: 800px;
     min-width: 384px;
@@ -83,6 +167,12 @@ body {
 .cover-right,
 .cover-left {
     width: 50%;
+}
+
+.cover-left__img {
+    width: 100%;
+    max-width: 800px;
+    min-width: 384px;
 }
 
 .cover {
@@ -127,7 +217,7 @@ body {
 }
 
 .content-box__last {
-    background-image: url(img/content-accesories.svg);
+    background-image: url(../img/content-accesories.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

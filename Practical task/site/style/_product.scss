@@ -1,0 +1,125 @@
+.product-catalog__margin {
+    margin-bottom: 0;
+}
+
+.product-slider {
+    position: relative;
+    margin-bottom: 676px;
+
+    &_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(247, 247, 247);
+    }
+
+    &__img {
+        width: 100%;
+        padding-top: 11px;
+        padding-bottom: 41px;
+    }
+
+    &__arrow {
+        background: rgba(42, 42, 42, 0.15);
+        width: 47px;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__arrow:hover path {
+        fill: $colorSelectSite;
+        transition: .3s ease;
+    }
+}
+
+.product-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 93%;
+
+    &__box {
+        width: 1140px;
+        height: 600px;
+        border: 1px solid rgb(234, 234, 234);
+        background-color: white;
+    }
+
+    &_flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__head {
+        color: $colorSelectSite;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        margin-bottom: 12px;
+    }
+
+    &__top-hr {
+        height: 3px;
+        width: 63px;
+        background: $colorSelectSite;
+        border: none;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        color: rgb(77, 77, 77);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-bottom: 48px;
+    }
+
+    &__dsc {
+        color: rgb(94, 94, 94);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        text-align: center;
+        max-width: 555px;
+        margin-bottom: 32px;
+    }
+
+    &__prise {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        color: $colorSelectSite;
+        margin-bottom: 64px;
+    }
+
+    &__bottom-hr {
+        background-color: rgb(234, 234, 234);
+        width: 641px;
+        height: 1PX;
+        border: none;
+        margin-bottom: 65px;
+    }
+
+    &__sort {
+        display: flex;
+        gap: 23px;
+        margin-bottom: 64px;
+    }
+
+    &__btn-flex {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+    }
+
+    &__btn-flex:hover path {
+        fill: white;
+        transition: .5s ease;
+    }
+}
