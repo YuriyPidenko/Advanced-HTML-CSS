@@ -1,0 +1,30 @@
+.box {
+    font-family: Arial;
+    font-size: 39px;
+    color: #FFFFFF;
+    text-shadow:
+        -0 -2px 1px #04939E,
+        0 -2px 1px #04939E,
+        -0 2px 1px #04939E,
+        0 2px 1px #04939E,
+        -2px -0 1px #04939E,
+        2px -0 1px #04939E,
+        -2px 0 1px #04939E,
+        2px 0 1px #04939E,
+        -1px -2px 1px #04939E,
+        1px -2px 1px #04939E,
+        -1px 2px 1px #04939E,
+        1px 2px 1px #04939E,
+        -2px -1px 1px #04939E,
+        2px -1px 1px #04939E,
+        -2px 1px 1px #04939E,
+        2px 1px 1px #04939E,
+        -2px -2px 1px #04939E,
+        2px -2px 1px #04939E,
+        -2px 2px 1px #04939E,
+        2px 2px 1px #04939E,
+        -2px -2px 1px #04939E,
+        2px -2px 1px #04939E,
+        -2px 2px 1px #04939E,
+        2px 2px 1px #04939E;
+}
