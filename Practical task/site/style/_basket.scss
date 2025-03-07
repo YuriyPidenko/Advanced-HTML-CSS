@@ -1,0 +1,193 @@
+.cart-catalog__margin {
+    margin-bottom: 96px;
+}
+
+.shopping-gart {
+    margin-bottom: 40px;
+
+    &__left {
+        width: 652px;
+    }
+
+    &__box {
+        display: flex;
+        width: 652px;
+        box-shadow: 15px 15px 20px 0px #d1d1d1;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    &__box:last-child {
+        margin-bottom: 89px;
+    }
+
+    &__box-txt {
+        margin-top: 22px;
+        margin-left: 31px;
+    }
+
+    &__header {
+        color: $colorText;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        width: 200px;
+        margin-bottom: 42px;
+    }
+
+    &__dsc {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(87, 87, 87);
+        margin-bottom: 6px;
+    }
+
+    &__dsc-price {
+        color: $colorSelectSite;
+    }
+
+    &__dsc-value {
+        color: rgb(111, 110, 110);
+    }
+
+    &__dsc_bd {
+        border: 1px solid rgb(234, 234, 234);
+        padding: 1px 16px;
+        margin-left: 24px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+    }
+
+    &__right {
+        width: 360px;
+    }
+
+    &__right-title {
+        color: $colorText;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+
+    &__right_input {
+        width: 360px;
+        height: 44px;
+        border: 1px solid rgb(164, 164, 164);
+        margin-bottom: 20px;
+        padding-left: 17px;
+    }
+
+    &__right_input::placeholder {
+        color: rgb(177, 177, 177);
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+    }
+
+    &__right_input[type=text]:focus {
+        outline: 2px solid $colorSelectSite;
+        border: none;
+    }
+
+    &__input-color::placeholder {
+        color: $colorText;
+    }
+
+    &__box-form {
+        margin-top: 12px;
+        margin-bottom: 53px;
+    }
+
+    &__final-price {
+        // width: 360px;
+        // height: 214px;
+        background: rgb(245, 243, 243);
+        padding: 40px;
+    }
+
+    &__result-price {
+        color: rgb(74, 74, 74);
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        text-align: right;
+        margin-bottom: 12px;
+    }
+
+    &__price-margin {
+        margin-left: 20px;
+    }
+
+    &__general-price {
+        color: rgb(74, 74, 74);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        text-align: right;
+        margin-bottom: 21px;
+    }
+
+    &__price_color {
+        color: $colorSelectSite;
+    }
+
+    &__price_hr {
+        width: 279px;
+        height: 1px;
+        background: rgb(226, 226, 226);
+        margin-bottom: 32px;
+    }
+
+    &__price-link {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        background: rgb(241, 109, 127);
+        padding: 13px 43px;
+        border: 1px solid $colorSelectSite;
+        text-decoration: none;
+        width: 275px;
+    }
+
+    &__price-link:hover {
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: 1px solid rgb(164, 164, 164);
+        transition: all .5s ease;
+        padding: 13px 43px;
+    }
+}
+
+.shopping-btn__link {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-decoration: none;
+    border: 1px solid rgb(164, 164, 164);
+    padding: 1rem 2rem;
+    transition: all .5s ease;
+}
+
+.shopping-btn__link:hover {
+    border: 1px solid $colorSelectSite;
+    background-color: $colorSelectSite;
+    color: white;
+}
+
+.shopping-btn__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-flex {
+    display: flex;
+    justify-content: space-between;
+}
