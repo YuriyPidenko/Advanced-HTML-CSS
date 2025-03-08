@@ -11,20 +11,37 @@
         line-height: 29px;
 
     }
+
 }
 
 .breadcrumbs {
+    &__ul {
+        display: flex;
+    }
+
+    &__li:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
+        color: rgb(99, 99, 99);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+    }
+
+    &__li:last-child .breadcrumbs__link {
+        font-weight: 700;
+        color: $colorSelectSite;
+    }
+
     &__link {
         text-decoration: none;
         color: rgb(99, 99, 99);
         font-size: 14px;
         font-weight: 300;
         line-height: 17px;
-
-        &_site {
-            color: $colorSelectSite;
-        }
     }
+
 }
 
 .trading-cards__catalog {
