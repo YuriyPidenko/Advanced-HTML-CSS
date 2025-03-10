@@ -6,12 +6,12 @@
     margin-bottom: 40px;
 
     &__left {
-        width: 652px;
+        width: 57%;
     }
 
     &__box {
         display: flex;
-        width: 652px;
+        width: 100%;
         box-shadow: 15px 15px 20px 0px #d1d1d1;
         position: relative;
         margin-bottom: 40px;
@@ -101,12 +101,12 @@
 
     &__box-form {
         margin-top: 12px;
-        margin-bottom: 53px;
+        margin-bottom: 51px;
     }
 
     &__final-price {
-        // width: 360px;
-        // height: 214px;
+        width: 360px;
+        height: 214px;
         background: rgb(245, 243, 243);
         padding: 40px;
     }
@@ -163,6 +163,14 @@
         transition: all .5s ease;
         padding: 13px 43px;
     }
+
+    &__price-btn {
+        margin-bottom: 58px;
+    }
+}
+
+.shopping-btn__box_righ {
+    margin-top: 33px;
 }
 
 .shopping-btn__link {
@@ -185,9 +193,42 @@
 .shopping-btn__box {
     display: flex;
     justify-content: space-between;
+
 }
 
 .shopping-flex {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .shopping-gart__left {
+        width: 734px;
+    }
+
+    .shopping-gart__box {
+        width: 734px;
+    }
+
+    .shopping-flex {
+        justify-content: center;
+    }
+
+    .shopping-btn__box {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .shopping-gart__right {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .shopping-gart__final-price {
+
+        margin-top: 50px;
+    }
 }

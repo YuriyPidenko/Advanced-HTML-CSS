@@ -182,6 +182,21 @@
   top: 22px;
 }
 
+@media (max-width: 1024px) {
+  .filter-sotr {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 767px) {
+  .catalog-nav__flex_mobile {
+    justify-content: center !important;
+    gap: 32px;
+  }
+  .catalog-nav {
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+}
 .product-catalog__margin {
   margin-bottom: 0;
 }
@@ -293,6 +308,11 @@
   transition: 0.5s ease;
 }
 
+@media (max-width: 1024px) {
+  .display-none__table_media {
+    display: none;
+  }
+}
 .cart-catalog__margin {
   margin-bottom: 96px;
 }
@@ -301,11 +321,11 @@
   margin-bottom: 40px;
 }
 .shopping-gart__left {
-  width: 652px;
+  width: 57%;
 }
 .shopping-gart__box {
   display: flex;
-  width: 652px;
+  width: 100%;
   box-shadow: 15px 15px 20px 0px #d1d1d1;
   position: relative;
   margin-bottom: 40px;
@@ -389,9 +409,11 @@
 }
 .shopping-gart__box-form {
   margin-top: 12px;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
 }
 .shopping-gart__final-price {
+  width: 360px;
+  height: 214px;
   background: rgb(245, 243, 243);
   padding: 40px;
 }
@@ -441,6 +463,13 @@
   transition: all 0.5s ease;
   padding: 13px 43px;
 }
+.shopping-gart__price-btn {
+  margin-bottom: 58px;
+}
+
+.shopping-btn__box_righ {
+  margin-top: 33px;
+}
 
 .shopping-btn__link {
   color: rgb(0, 0, 0);
@@ -467,8 +496,33 @@
 .shopping-flex {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
+@media (max-width: 1024px) {
+  .shopping-gart__left {
+    width: 734px;
+  }
+  .shopping-gart__box {
+    width: 734px;
+  }
+  .shopping-flex {
+    justify-content: center;
+  }
+  .shopping-btn__box {
+    justify-content: center;
+    gap: 50px;
+  }
+  .shopping-gart__right {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  .shopping-gart__final-price {
+    margin-top: 50px;
+  }
+}
 .registration-catalog__m {
   margin-bottom: 64px;
 }
@@ -570,6 +624,7 @@
 .registration-flex {
   display: flex;
   justify-content: space-between;
+  gap: 22px;
 }
 
 .registration-rigth {
@@ -681,7 +736,7 @@ summary::-webkit-details-marker {
   top: 74px;
   right: 0px;
   transition: right 0.3s;
-  z-index: 10;
+  z-index: 11;
 }
 
 .burger-menu__icon_title {

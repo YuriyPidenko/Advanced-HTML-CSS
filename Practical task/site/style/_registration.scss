@@ -111,6 +111,7 @@
 .registration-flex {
     display: flex;
     justify-content: space-between;
+    gap: 22px;
 }
 
 .registration-rigth {
@@ -147,3 +148,5 @@
     }
 
 }
+
+@media (max-width: 1024px) {}

@@ -213,3 +213,21 @@
         top: 22px;
     }
 }
+
+@media (max-width: 1024px) {
+    .filter-sotr {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 767px) {
+    .catalog-nav__flex_mobile {
+        justify-content: center !important;
+        gap: 32px;
+    }
+
+    .catalog-nav {
+        padding-top: 24px;
+        padding-bottom: 46px;
+    }
+}

@@ -123,3 +123,9 @@
         transition: .5s ease;
     }
 }
+
+@media (max-width: 1024px) {
+    .display-none__table_media {
+        display: none;
+    }
+}
