@@ -129,3 +129,24 @@
         display: none;
     }
 }
+
+@media (max-width: 767px) {
+    .catalog-nav__flex_mobile {
+        justify-content: center !important;
+        gap: 32px;
+    }
+
+    .catalog-nav {
+        padding-top: 24px;
+        padding-bottom: 46px;
+        margin-bottom: 0px;
+    }
+
+    .product-details__dsc {
+        width: 326px;
+    }
+
+    .sort__heading {
+        font-size: 10px;
+    }
+}

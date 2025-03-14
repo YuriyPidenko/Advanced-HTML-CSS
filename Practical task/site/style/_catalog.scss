@@ -96,6 +96,7 @@
     width: 360px;
     position: relative;
     z-index: 10;
+    pointer-events: all;
 
     &__content {
         background-color: white;
@@ -229,5 +230,31 @@
     .catalog-nav {
         padding-top: 24px;
         padding-bottom: 46px;
+        margin-bottom: 0px;
     }
+
+    .filter__heading {
+        display: none;
+    }
+
+    .filter-sotr {
+        padding-top: 26px;
+        height: 102px;
+    }
+
+    .filter__svg {
+        width: 37px;
+        height: 25px;
+    }
+
+    .sort {
+        position: absolute;
+        padding-left: 75px;
+        z-index: 10;
+    }
+
+    .filter__summary {
+        padding-left: 5px;
+    }
+
 }

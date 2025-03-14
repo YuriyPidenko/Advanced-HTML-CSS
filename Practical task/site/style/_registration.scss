@@ -116,10 +116,11 @@
 
 .registration-rigth {
     width: 57%;
+    min-width: 358px;
 
     &__head {
         color: rgb(0, 0, 0);
-        font-size: 24px;
+        font-size: calc(14px + 14*(100vw - 320px) / 1440);
         font-weight: 300;
         line-height: 29px;
         margin-bottom: 22px;
@@ -128,7 +129,7 @@
 
     &__dsc {
         color: rgb(0, 0, 0);
-        font-size: 24px;
+        font-size: calc(14px + 14*(100vw - 320px) / 1440);
         font-weight: 300;
         line-height: 29px;
         margin-bottom: 21px;
@@ -137,7 +138,7 @@
     &__text {
         margin-bottom: 16px;
         color: rgb(0, 0, 0);
-        font-size: 24px;
+        font-size: calc(14px + 14*(100vw - 320px) / 1440);
         font-weight: 300;
         line-height: 29px;
         margin-bottom: 22px;
@@ -150,3 +151,14 @@
 }
 
 @media (max-width: 1024px) {}
+
+@media (max-width: 767px) {
+    .registration-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .registration-left__btn {
+        margin-bottom: 57px;
+    }
+}

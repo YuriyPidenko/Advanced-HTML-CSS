@@ -81,6 +81,7 @@
   width: 360px;
   position: relative;
   z-index: 10;
+  pointer-events: all;
 }
 .filter__content {
   background-color: white;
@@ -195,6 +196,26 @@
   .catalog-nav {
     padding-top: 24px;
     padding-bottom: 46px;
+    margin-bottom: 0px;
+  }
+  .filter__heading {
+    display: none;
+  }
+  .filter-sotr {
+    padding-top: 26px;
+    height: 102px;
+  }
+  .filter__svg {
+    width: 37px;
+    height: 25px;
+  }
+  .sort {
+    position: absolute;
+    padding-left: 75px;
+    z-index: 10;
+  }
+  .filter__summary {
+    padding-left: 5px;
   }
 }
 .product-catalog__margin {
@@ -311,6 +332,23 @@
 @media (max-width: 1024px) {
   .display-none__table_media {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .catalog-nav__flex_mobile {
+    justify-content: center !important;
+    gap: 32px;
+  }
+  .catalog-nav {
+    padding-top: 24px;
+    padding-bottom: 46px;
+    margin-bottom: 0px;
+  }
+  .product-details__dsc {
+    width: 326px;
+  }
+  .sort__heading {
+    font-size: 10px;
   }
 }
 .cart-catalog__margin {
@@ -505,7 +543,7 @@
     width: 734px;
   }
   .shopping-gart__box {
-    width: 734px;
+    max-width: 734px;
   }
   .shopping-flex {
     justify-content: center;
@@ -521,6 +559,40 @@
   }
   .shopping-gart__final-price {
     margin-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .shopping-gart__img {
+    width: 143.86px;
+    height: 188px;
+  }
+  .shopping-gart__header {
+    font-size: 16px;
+    line-height: 19px;
+    width: 130px;
+    margin-bottom: 25px;
+  }
+  .shopping-gart__dsc {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 4px;
+  }
+  .shopping-gart__box-txt {
+    margin-top: 13px;
+    margin-left: 17px;
+  }
+  .shopping-btn__link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 9px 17px;
+  }
+  .shopping-btn__box {
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .shopping-gart__right {
+    flex-wrap: wrap;
   }
 }
 .registration-catalog__m {
@@ -629,10 +701,11 @@
 
 .registration-rigth {
   width: 57%;
+  min-width: 358px;
 }
 .registration-rigth__head {
   color: rgb(0, 0, 0);
-  font-size: 24px;
+  font-size: calc(14px + 14 * (100vw - 320px) / 1440);
   font-weight: 300;
   line-height: 29px;
   margin-bottom: 22px;
@@ -640,7 +713,7 @@
 }
 .registration-rigth__dsc {
   color: rgb(0, 0, 0);
-  font-size: 24px;
+  font-size: calc(14px + 14 * (100vw - 320px) / 1440);
   font-weight: 300;
   line-height: 29px;
   margin-bottom: 21px;
@@ -648,7 +721,7 @@
 .registration-rigth__text {
   margin-bottom: 16px;
   color: rgb(0, 0, 0);
-  font-size: 24px;
+  font-size: calc(14px + 14 * (100vw - 320px) / 1440);
   font-weight: 300;
   line-height: 29px;
   margin-bottom: 22px;
@@ -658,6 +731,15 @@
   gap: 23px;
 }
 
+@media (max-width: 767px) {
+  .registration-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .registration-left__btn {
+    margin-bottom: 57px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
