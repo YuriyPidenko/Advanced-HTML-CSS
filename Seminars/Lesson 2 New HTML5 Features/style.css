@@ -1,0 +1,130 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Oswalid", "sans-serif";
+}
+
+.container {
+  /* max-width: 1146px;
+  margin: 0 auto; */
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.menu-box {
+  display: none;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top: 51px;
+}
+
+.item-link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Lato;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #646464;
+}
+
+.item-link:hover {
+  color: #f16d7f;
+}
+
+.menu-heading {
+  width: 235px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 14px;
+  font-family: Lato;
+  line-height: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+  margin-bottom: 15px;
+}
+
+.menu-list {
+  position: relative;
+}
+
+.menu-item {
+  margin-right: 45px;
+}
+
+.menu-item:last-of-type {
+  margin-right: 0;
+}
+
+.menu-box::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  top: -6px;
+  left: 37px;
+  right: auto;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+
+.menu-list:hover .menu-box {
+  display: flex;
+}
+
+.last:hover .menu-box {
+  right: 0;
+  left: auto;
+}
+
+.last:hover .menu-box::before {
+  right: 55px;
+  left: auto;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "→";
+  padding-right: 0.5em;
+}
+
+details[open] > summary::before {
+  content: "↓";
+}/*# sourceMappingURL=style.css.map */
