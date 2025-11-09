@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'vars';
 @import 'product';
+@import 'catalog';
 
 
 
@@ -64,6 +65,91 @@ summary::-webkit-details-marker {
     align-items: baseline;
 
 }
+
+
+#burger {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked~.nav {
+        right: -232px;
+        ;
+    }
+
+}
+
+.box-content {
+    overflow: hidden;
+}
+
+.nav {
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+    background: rgba(255, 255, 255, 1);
+    width: 232px;
+    padding: 32px;
+    position: absolute;
+    top: 79px;
+    right: 0px;
+    transition: right 0.3s;
+    z-index: 10;
+
+    &__heading {
+        color: rgba(0, 0, 0, 1);
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        margin-bottom: 24px;
+    }
+
+    &__head {
+        color: rgba(241, 109, 127, 1);
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-bottom: 12px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 20px;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: rgba(111, 110, 110, 1);
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 5px 22px;
+        transition: all 0.2s;
+    }
+
+    &__link:hover {
+        color: $colorSelecSite;
+    }
+
+    &__close {
+        padding: 5px;
+        position: absolute;
+        top: 11px;
+        right: 1px;
+        left: auto;
+    }
+
+    &__close:hover path {
+        fill: $colorSelecSite;
+    }
+}
+
+
+
 
 .brand-section__container {
     padding-left: calc(50% - 800px);
