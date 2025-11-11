@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background-color: #ccc;
+  min-height: 1700px;
+}
+
+.menu {
+  position: sticky;
+  width: 20%;
+  top: 20%;
+  margin-left: 10%;
+}
+
+.prallax {
+  min-height: 350px;
+  background-image: url(blue-foaming-waves-north-beach-nazare-portugal\ \(1\).jpg);
+  background-attachment: fixed;
+}
+
+.main {
+  margin-left: 20%;
+}
+
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=style.css.map */
