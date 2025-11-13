@@ -3,6 +3,7 @@
 @import 'vars';
 @import 'product';
 @import 'catalog';
+@import 'shopping-card';
 
 
 
@@ -296,10 +297,10 @@ summary::-webkit-details-marker {
 }
 
 .product-box {
-    max-width: 360px;
     display: flex;
     flex-direction: column;
-
+    max-width: 360px;
+    position: relative;
 }
 
 .product-box-text {
@@ -338,6 +339,64 @@ summary::-webkit-details-marker {
 
 .product-cards__margin {
     margin-bottom: 63px;
+}
+
+.card-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-box__img {
+    width: 100%;
+}
+
+.product-box:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-box:hover .product-box__img {
+    filter: brightness(30%);
+}
+
+.add-txt {
+
+    color: rgba(255, 255, 255, 1);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.add {
+    text-decoration: none;
+    display: none;
+    align-items: center;
+    padding: 10px 13px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    pointer-events: all;
+
+}
+
+.add:hover {
+    box-shadow: 0px 0px 10px 0px #fff;
+}
+
+.add-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 32%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.add-img {
+    margin-right: 11px;
+}
+
+.product-box:hover .add {
+    display: flex;
 }
 
 .product-btn {

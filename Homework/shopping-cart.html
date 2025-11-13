@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="box-content">
+        <header class="header wrapper-header">
+            <div class="container header-flex ">
+                <div class="header-left">
+                    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                    <img src="img/search.svg" alt="поиск">
+                </div>
+                <div class="header-right">
+                    <div class="burger-menu-icon">
+                        <label for="burger">
+                            <img src="img/burger.svg" alt="burger-menu">
+                        </label>
+                        <input id="burger" type="checkbox" checked>
+                        <nav class="nav">
+                            <h3 class="nav__heading">MENU</h3>
+                            <div class="nav__close"><label for="burger"><svg viewBox="0 0 12.0117 12.0117"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12.011719" height="12.011719" fill="none" customFrame="#000000">
+                                        <path id="Vector"
+                                            d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 -8.88178e-16 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"
+                                            fill="rgb(111,110,110)" fill-rule="nonzero" />
+                                    </svg>
+                                </label></div>
+                            <ul>
+                                <ul class="nav__box">
+                                    <p class="nav__head">MAN</p>
+                                    <li><a class="nav__link" href="#">Accessories</a></li>
+                                    <li><a class="nav__link" href="#">Bags</a></li>
+                                    <li><a class="nav__link" href="#">Denim</a></li>
+                                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                                </ul>
+                                <ul class="nav__box">
+                                    <p class="nav__head">WOMAN</p>
+                                    <li><a class="nav__link" href="#">Accessories</a></li>
+                                    <li><a class="nav__link" href="#">Jackets & Coats</a></li>
+                                    <li><a class="nav__link" href="#">Polos</a></li>
+                                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                                    <li><a class="nav__link" href="#">Shirts</a></li>
+                                </ul>
+                                <ul class="nav__box">
+                                    <p class="nav__head">KIDS</p>
+                                    <li><a class="nav__link" href="#">Accessories</a></li>
+                                    <li><a class="nav__link" href="#">Jackets & Coats</a></li>
+                                    <li><a class="nav__link" href="#">Polos</a></li>
+                                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                                    <li><a class="nav__link" href="#">Shirts</a></li>
+                                    <li><a class="nav__link" href="#">Bags</a></li>
+                                </ul>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <img class="dispplay-none" src="img/profile.svg" alt="профиль">
+                    <img class="dispplay-none" src="img/basket.svg" alt="корзина покупак">
+                </div>
+            </div>
+        </header>
+        <section class="top-head wrapper shopping__top-head">
+            <div class="container top-head__flex ">
+                <h2 class="top-head__heading">SHOPPING CART</h2>
+            </div>
+        </section>
+
+        <section class="cart-page-layout wrapper">
+            <div class="container cart-page-layout__flex">
+                <div class="cart-item">
+                    <div class="cart-item__container">
+                        <img class="cart-item__image" src="img/shopping-cart/cart-item.png" alt="T-SHIRT">
+                        <div class="cart-item__box">
+                            <h2 class="cart-item__title">MANGO PEOPLE T-SHIRT</h2>
+                            <p class="cart-item__text">Prisce: <span class="cart-item__price">$300</span></p>
+                            <p class="cart-item__text">Color: <span class="cart-item__color">Red</span></p>
+                            <p class="cart-item__text">Size: <span class="cart-item__size">XL</span></p>
+                            <form action="#" class="cart-item__label">
+                                <p class="cart-item__quantity">Quantity:</p>
+                                <input class="cart-item__input" min="1" placeholder="1" type="number">
+                            </form>
+                            <div class="cart-item__removed"><svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector"
+                                        d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467832C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+                                        fill="rgb(87,87,87)" fill-rule="nonzero" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item__container">
+                        <img class="cart-item__image" src="img/shopping-cart/cart-item2.png" alt="T-SHIRT">
+                        <div class="cart-item__box">
+                            <h2 class="cart-item__title">MANGO PEOPLE T-SHIRT</h2>
+                            <p class="cart-item__text">Prisce: <span class="cart-item__price">$300</span></p>
+                            <p class="cart-item__text">Color: <span class="cart-item__color">Red</span></p>
+                            <p class="cart-item__text">Size: <span class="cart-item__size">XL</span></p>
+                            <form action="#" class="cart-item__label">
+                                <label class="cart-item__quantity">Quantity:</label>
+                                <input class="cart-item__input" min="1" placeholder="1" type="number">
+                            </form>
+                            <div class="cart-item__removed"><svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector"
+                                        d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467832C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+                                        fill="rgb(87,87,87)" fill-rule="nonzero" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item__button-box">
+                        <a href="#" class="cart-item__btn">CLEAR SHOPPING CART</a>
+                        <a href="#" class="cart-item__btn">CONTINUE SHOPPING</a>
+                    </div>
+                </div>
+                <div class="cart-summary-section">
+                    <div class="delivery-form">
+                        <h2 class="delivery-form__title">SHIPPING ADRESS</h2>
+                        <form class="shipping-address" action="#">
+                            <input type="text" class="shipping-address__input" name="city" placeholder="city">
+                            <input type="text" class="shipping-address__input" name="state" placeholder="State">
+                            <input type="text" class="shipping-address__input" name="zip" placeholder="Postcode / Zip">
+
+                        </form>
+                        <div><a href="#" class="shipping-address__btn">GET A QUOTE</a></div>
+                    </div>
+                    <div class="cart-total">
+                        <p class="cart-total__sub">SUB TOTAL<span>$900</span></p>
+                        <p class="cart-total__grand">GRAND TOTAL <span class="cart-total__grand_price">$900</span></p>
+                        <div class="cart-total__box-button"><a href="#" class="cart-total__checkout-button">PROCEED TO
+                                CHECKOUT</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe wrapper">
+            <div class="subscribe-flex flex  container">
+                <div class="subscribe-left">
+                    <img class="subscribe-left__img" src="img/subscribe-left.png" alt="женщина">
+                    <p class="subscribe-left__dsc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus
+                        condimentum“</p>
+                </div>
+
+                <div class="subscribe-right">
+                    <h2 class="subscribe-right__heading">SUBSCRIBE</h2>
+                    <p class="subscribe-right__dsc">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe-right__form" action="#">
+                        <input class="subscribe-right__email" type="email" placeholder="Enter Your Email">
+                        <button class="subscribe-right__button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-flex container">
+                <div class="footer-left">
+                    <p class="footer-text">© 2023 Brand All Rights Reserved.</p>
+                </div>
+
+                <div class="footer-right">
+                    <img src="img/Pinterest.svg" alt="Pinterest">
+                    <img src="img/twitter.svg" alt="twitter">
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
