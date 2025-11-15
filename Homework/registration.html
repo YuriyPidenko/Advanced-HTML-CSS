@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="box-content">
+        <header class="header wrapper-header">
+            <div class="container header-flex ">
+                <div class="header-left">
+                    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                    <img src="img/search.svg" alt="поиск">
+                </div>
+                <div class="header-right">
+                    <div class="burger-menu-icon">
+                        <label for="burger">
+                            <img src="img/burger.svg" alt="burger-menu">
+                        </label>
+                        <input id="burger" type="checkbox" checked>
+                        <nav class="nav">
+                            <h3 class="nav__heading">MENU</h3>
+                            <div class="nav__close"><label for="burger"><svg viewBox="0 0 12.0117 12.0117"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12.011719" height="12.011719" fill="none" customFrame="#000000">
+                                        <path id="Vector"
+                                            d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 -8.88178e-16 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"
+                                            fill="rgb(111,110,110)" fill-rule="nonzero" />
+                                    </svg>
+                                </label></div>
+                            <ul>
+                                <ul class="nav__box">
+                                    <p class="nav__head">MAN</p>
+                                    <li><a class="nav__link" href="#">Accessories</a></li>
+                                    <li><a class="nav__link" href="#">Bags</a></li>
+                                    <li><a class="nav__link" href="#">Denim</a></li>
+                                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                                </ul>
+                                <ul class="nav__box">
+                                    <p class="nav__head">WOMAN</p>
+                                    <li><a class="nav__link" href="#">Accessories</a></li>
+                                    <li><a class="nav__link" href="#">Jackets & Coats</a></li>
+                                    <li><a class="nav__link" href="#">Polos</a></li>
+                                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                                    <li><a class="nav__link" href="#">Shirts</a></li>
+                                </ul>
+                                <ul class="nav__box">
+                                    <p class="nav__head">KIDS</p>
+                                    <li><a class="nav__link" href="#">Accessories</a></li>
+                                    <li><a class="nav__link" href="#">Jackets & Coats</a></li>
+                                    <li><a class="nav__link" href="#">Polos</a></li>
+                                    <li><a class="nav__link" href="#">T-Shirts</a></li>
+                                    <li><a class="nav__link" href="#">Shirts</a></li>
+                                    <li><a class="nav__link" href="#">Bags</a></li>
+                                </ul>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <img class="dispplay-none" src="img/profile.svg" alt="профиль">
+                    <img class="dispplay-none" src="img/basket.svg" alt="корзина покупак">
+                </div>
+            </div>
+        </header>
+        <section class="top-head wrapper shopping__top-head">
+            <div class="container top-head__flex ">
+                <h2 class="top-head__heading">REGISTRATION</h2>
+            </div>
+        </section>
+
+        <section class="reg-loyalty-container wrapper">
+            <div class="container reg-loyalty-container__flex ">
+                <div class="reg-form">
+                    <form class="reg-form__form">
+
+                        <div class="reg-form__field">
+                            <h2 class="reg-form__title">Your Name</h2>
+                            <input type="text" class="reg-form__input" name="first-name" placeholder="First Name">
+                            <input type="text" class="reg-form__input" name="last-name" placeholder="Last Name">
+                        </div>
+                        <div class="reg-form__field">
+                            <div class="reg-form__gender-options">
+                                <label class="reg-form__gender-label">
+                                    <input type="radio" name="gender" value="male" class="reg-form__radio">
+                                    <span class="reg-form__radio-name">Male</span>
+                                </label>
+                                <label class="reg-form__gender-label">
+                                    <input type="radio" name="gender" value="female" class="reg-form__radio">
+                                    <span class="reg-form__radio-name">Female</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="reg-form__field">
+                            <h2 class="reg-form__title">Login details</h2>
+                            <input type="email" class="reg-form__input" name="email" placeholder="Email">
+                            <input type="password" class="reg-form__input reg-form__input-password" name="password"
+                                placeholder="Password">
+                            <p class="reg-form__password-instruction">Password must be&nbsp;at&nbsp;least
+                                8&nbsp;characters long and
+                                contain a&nbsp;number and a&nbsp;special character.</p>
+                        </div>
+                        <button type="submit" class="reg-form__button">JOIN NOW <span><svg viewBox="0 0 17.001 9.91861"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="17.000977" height="9.918610" fill="none" customFrame="#000000">
+                                    <g id="Group">
+                                        <path id="Vector"
+                                            d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 1.25823e-15 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"
+                                            fill="rgb(255,255,255)" fill-rule="evenodd" />
+                                        <path id="Vector"
+                                            d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116L15.583 4.25116C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678L0.708318 5.6678C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"
+                                            fill="rgb(255,255,255)" fill-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </span></button>
+                    </form>
+                </div>
+                <div class="loyalty">
+                    <h2 class="loyalty__title">LOYALTY HAS ITS PERKS</h2>
+                    <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious
+                        perks. Starting with these as soon as you join:</p>
+                    <ul class="loyalty__perks">
+                        <li class="loyalty__perk">15% off welcome offer</li>
+                        <li class="loyalty__perk">Free shipping, returns and exchanges on all orders</li>
+                        <li class="loyalty__perk">$10 off a purchase on your birthday</li>
+                        <li class="loyalty__perk">Early access to products</li>
+                        <li class="loyalty__perk">Exclusive offers & rewards</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe wrapper">
+            <div class="subscribe-flex flex  container">
+                <div class="subscribe-left">
+                    <img class="subscribe-left__img" src="img/subscribe-left.png" alt="женщина">
+                    <p class="subscribe-left__dsc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus
+                        condimentum“</p>
+                </div>
+
+                <div class="subscribe-right">
+                    <h2 class="subscribe-right__heading">SUBSCRIBE</h2>
+                    <p class="subscribe-right__dsc">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe-right__form" action="#">
+                        <input class="subscribe-right__email" type="email" placeholder="Enter Your Email">
+                        <button class="subscribe-right__button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-flex container">
+                <div class="footer-left">
+                    <p class="footer-text">© 2023 Brand All Rights Reserved.</p>
+                </div>
+
+                <div class="footer-right">
+                    <img src="img/Pinterest.svg" alt="Pinterest">
+                    <img src="img/twitter.svg" alt="twitter">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
