@@ -276,3 +276,19 @@ summary::-webkit-details-marker {
         margin-right: 8px;
     }
 }
+
+@media (max-width: 1024px) {
+    .filter-sort {
+        justify-content: space-between;
+    }
+
+    .sort {
+        padding-right: 10px;
+        width: 307px;
+        justify-content: center;
+    }
+
+    .product-box_display-none {
+        display: none !important;
+    }
+}

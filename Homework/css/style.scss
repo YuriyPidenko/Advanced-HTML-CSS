@@ -521,6 +521,13 @@ summary::-webkit-details-marker {
     background: rgba(225, 225, 225, 1);
 }
 
+.subscribe-right__email:focus {
+    outline: none;
+    border: 1px solid $colorSelecSite;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
 .subscribe-right__email::placeholder {
     color: rgba(34, 34, 36, 1);
     font-family: Lato;
@@ -548,7 +555,7 @@ summary::-webkit-details-marker {
 
 .subscribe-right__button:hover {
     color: rgba(241, 109, 127, 1);
-    background-color: white;
+    background: rgb(225, 225, 225);
 }
 
 .subscribe-right__form {
@@ -587,6 +594,24 @@ summary::-webkit-details-marker {
 .footer-right {
     display: flex;
     gap: 7px;
+
+}
+
+.footer-right__link {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 1);
+}
+
+.footer-right__icon {
+    color: black;
+    padding: 8px;
+    width: 32px !important;
+    height: 32px;
+    transition: all 0.3s;
+}
+
+.footer-right__icon:hover {
+    color: $colorSelecSite;
 }
 
 @media (max-width: 1024px) {

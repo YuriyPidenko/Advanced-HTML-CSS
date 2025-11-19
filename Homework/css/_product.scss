@@ -157,3 +157,10 @@
         transition: 0.3s;
     }
 }
+
+@media (max-width: 1024px) {
+
+    .product-box_display-none {
+        display: none !important;
+    }
+}

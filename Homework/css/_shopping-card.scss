@@ -11,6 +11,8 @@
 .cart-page-layout__flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .cart-item {
@@ -18,10 +20,11 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 57%;
+    width: 652px;
 
 
     &__container {
+        text-decoration: none;
         width: 652px;
         display: flex;
         box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.21);
@@ -141,12 +144,9 @@
 
 }
 
-.cart-summary-section {
-    width: 31.5%;
-}
-
 .delivery-form {
-    margin-bottom: 63px;
+    margin-bottom: 80px;
+    width: 360px;
 }
 
 .shipping-address {
@@ -172,6 +172,7 @@
     }
 
     &__btn {
+        background-color: white;
         text-decoration: none;
         padding: 11px 14px;
         border: 1px solid rgba(164, 164, 164, 1);
@@ -242,5 +243,31 @@
         border: 1px solid rgba(164, 164, 164, 1);
         color: rgba(74, 74, 74, 1);
         background: rgba(245, 243, 243, 1);
+    }
+}
+
+@media (max-width: 1024px) {
+    .cart-page-layout__flex {
+        justify-content: center;
+    }
+
+    .cart-item {
+        margin-bottom: 40px;
+    }
+
+    .cart-summary-section {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .delivery-form {
+        width: 360px;
+    }
+
+    .cart-total {
+        margin-top: 55px;
+        height: 212px;
     }
 }
